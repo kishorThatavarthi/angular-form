@@ -3,14 +3,13 @@
   <h1>Bootcamp</h1>
   <form #userForm="ngForm">
 
-    {{userForm.value |json }}
-    <hr/>
-    {{userModel | json}}
+   
     
     <div class="form-group">
       <label>name</label>
-      <input type="text" class="form-control"  name="username" [(ngModel)]=userModel.name>
+      <input type="text" required #name="ngModel" class="form-control"  name="username" [(ngModel)]=userModel.name>
     </div>
+    {{name.untouched}}
    <div class="form-group">
       <label>email</label>
       <input type="email" class="form-control" name="email" [(ngModel)]=userModel.email>
