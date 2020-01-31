@@ -8,5 +8,6 @@ import {User} from './user';
 })
 export class AppComponent  {
   name = 'Angular';
+    topics=["angular","react","vue"];
    userModel=new User('rob','rob@test.com',555566,'','morning',true) 
 }
